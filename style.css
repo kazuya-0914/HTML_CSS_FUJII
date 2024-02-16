@@ -1,0 +1,13 @@
+.flexbox-container {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  gap: 40px;
+  padding: 5px;
+  background-color: lightcyan;
+}
+.flexbox-item {
+  height: 100px;
+  padding: 5px;
+  margin: 5px;
+  background-color: orange;
+}
