@@ -3,28 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="JavaScriptです">
-  <title>JavaScript基礎</title>
+  <meta name="description" content="jQuery基礎です">
+  <title>jQuery基礎</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container m-auto">
     <header class="p-4">
-      <h3>JavaScript基礎</h3>
+      <h3>jQuery基礎</h3>
+      <img src="" alt="">
     </header>
 
     <main class="p-4 mb-4 border border-primary" id="test">
-      <div id="dom-code">
-        
-      </div>
+      <form>
+        <!-- 名前 -->
+        <div>
+          <span>名前：</span>
+          <input type="text" name="username" />
+        </div>
+        <!-- 性別 -->
+        <div>
+          <span>性別：</span>
+          <input type="radio" name="gender" value="male">男
+          <input type="radio" name="gender" value="female">女
+          <input type="radio" name="gender" value="other">その他
+        </div>
+        <!-- 血液型 -->
+        <div>
+          <span>血液型：</span>
+          <select name="blood">
+            <option value="a">A型</option>
+            <option value="b">B型</option>
+            <option value="o">O型</option>
+            <option value="ab">AB型</option>
+            <option value="unknown">不明</option>
+          </select>
+        </div>
+        <!-- 趣味 -->
+        <div>
+          <span>趣味（３つまで）：</span>
+          <input type="checkbox" name="hobby" value="book">読書
+          <input type="checkbox" name="hobby" value="music">音楽
+          <input type="checkbox" name="hobby" value="movie">映画
+          <input type="checkbox" name="hobby" value="walk">散歩
+        </div>
+        <input type="button" id="check" value="check" disabled="true" />
+      </form>
     </main>
 
     <footer>
       <button class="btn btn-success" id="reset-btn">リセット</button>
     </footer>
   </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

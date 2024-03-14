@@ -1,0 +1,96 @@
+html {
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans", Meiryo, sans-serif;
+  color: #2b2a27;
+}
+
+body {
+  margin: 0;
+}
+
+header > div {
+  width: 100%;
+  height: 100vh;
+}
+
+#mainvisual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#recipe_diary {
+  margin: 80px auto 85px auto;
+  text-align: center;
+}
+
+#recipe_diary > h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+#recipe_diary > p {
+  font-size: 16px;
+}
+
+#photos {
+  width: 100%;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+#photos > .photo {
+  flex-grow: 1;
+  width: auto;
+  height: 500px;
+  object-fit: cover; 
+}
+
+#recipe_link {
+  text-align: center;
+}
+
+#recipe_link > a {
+  font-size: 14px;
+  color: #000;
+  width: 232px;
+  height: 57px;
+  display: inline-block;
+  border: 1px solid #000;
+  line-height: 57px;
+  text-decoration: none;
+}
+
+#recipe_link > a:visited {
+  color: #2b2a27;
+}
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer > div > a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #2b2a27;
+}
+
+footer > div > a:visited {
+  color: #2b2a27;
+}
+
+footer > p {
+  margin-bottom: 20px;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 834px) {
+  #photos {
+    width: 100%;
+    display: flex;
+      flex-direction: column;
+    margin-bottom: 60px;
+  }
+}

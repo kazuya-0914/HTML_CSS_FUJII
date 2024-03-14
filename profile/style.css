@@ -1,0 +1,153 @@
+/* 基本設定 */
+html {
+  font-size: 16px;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ヘッダー */
+header {
+  margin: 20px auto 0 auto;
+  width: 90%;
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  font-size: 34px;
+  font-weight: bold;
+}
+header > h3 {
+  border: 1px solid #000000;
+  margin: 5px 1rem 5px 5px;
+  padding: 5px 30px;
+}
+nav {
+  width: 16rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#nav-flex {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-flex a {
+  text-decoration: none;
+}
+#nav-flex a:link {
+  color: #000000;
+}
+#nav-flex a:visited {
+  color: #000000;
+}
+#nav-flex a:hover {
+  cursor: pointer;
+}
+
+/* メインビジュアル */
+#main-visual{
+  margin-top: 20px;
+}
+#main-visual > img {
+  width: 100%;
+}
+
+/* 自己紹介 */
+#about > h3 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5rem;
+}
+#about-flex {
+  display: flex;
+     justify-content: center;
+}
+#about-flex > div {
+  margin: 0 2%;
+}
+img.about-photo {
+  width: 141px; 
+  height: 141px;
+  border-radius: 50%;
+}
+#about-flex > div > p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.ul-text {
+  font-size: 18px;
+  line-height: 24.52px;
+  margin: 0;
+}
+
+/* 作品 */
+#works > h3 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5rem;
+}
+#works-flex {
+  display: flex;
+     justify-content: center;
+}
+#works-flex > div {
+  width: 30%;
+  margin: 0 1%;
+}
+img.works-photo {
+  width: 100%;
+  max-width: 358px;
+  max-width: 600px;
+}
+p.works-text {
+  width: 100%;
+}
+
+/* フッター */
+footer > p {
+  text-align: center;
+}
+
+/* メディアクエリ */
+@media screen and (max-width: 768px ) {
+  #works-flex {
+    /* display:flex ;は二重で指定しなくてもいい
+    変更したいところだけ書けばいい */
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  #works-flex > div {
+    width: 90%;
+    max-width: 358px;
+    margin: 0 auto;
+  }
+  img.works-photo {
+    display: block;
+    margin: 0 auto;
+  }
+  p.works-text {
+    text-align: center;
+    margin: 0 auto 30px auto;
+  }
+}
+@media screen and (max-width: 412px) {
+  #about-flex {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  img.about-photo {
+    display: block;
+    margin: 0 auto;
+  }
+  #about-contents > p {
+    text-align: center;
+  }
+}
